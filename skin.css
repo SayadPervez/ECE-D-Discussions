@@ -1,0 +1,27 @@
+*{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    background-image: url("./subtle-background.png");
+    background-attachment: fixed;
+    padding-bottom: 3rem;
+}
+
+html{
+    overflow-y: auto;
+}
+
+.row{
+    margin:2rem auto;
+}
+
+.card{
+    background-image: linear-gradient(45deg,#5b269b,#6531a5,#491a81,#471980,#642fa5,#5b269b);
+    border-radius: 9px;
+}
+
+.nav-wrapper{
+    background-image: linear-gradient(45deg,#5b269b,#6531a5,#491a81,#471980,#642fa5,#5b269b);
+}
