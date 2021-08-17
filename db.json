@@ -2,38 +2,38 @@
     "lastUpdate" : "17-08-2021",
     "days" : {
         "monday" : [
-            "Control System Engineering",
-            "Elective 1",
-            "Elective 2",
-            "Digital Communication",
-            "Digital Signal Processing"
+            ["CSE","Control System Engineering"],
+            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["DC","Digital Communication"],
+            ["DSP","Digital Signal Processing"]
         ],
         "tuesday" : [
-            "Elective 2",
-            "Digital Communication",
-            "Control System Engineering",
-            "Digital Signal Processing",
-            "EM Waves and Wave Guides"
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["DC","Digital Communication"],
+            ["CSE","Control System Engineering"],
+            ["DSP","Digital Signal Processing"],
+            ["EM Waves","EM Waves and Wave Guides"]
         ],
         "wednesday" : [
-            "Elective 1",
-            "EM Waves and Wave Guides",
-            "Control System Engineering",
-            "Soft Skills 2"
+            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["CSE","Control System Engineering"],
+            ["Soft Skills 2","Soft Skills 2"]
         ],
         "thursday" : [
-            "EM Waves and Wave Guides",
-            "Elective 1",
-            "Elective 2",
-            "Digital Communication",
-            "Digital Signal Processing"
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["DC","Digital Communication"],
+            ["DSP","Digital Signal Processing"]
         ],
         "friday" : [
-            "Elective 2",
-            "EM Waves and Wave Guides",
-            "Digital Signal Processing",
-            "Elective 1",
-            "Control System Engineering"
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["DSP","Digital Signal Processing"],
+            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
+            ["CSE","Control System Engineering"]
         ]
     },
     "links":{
