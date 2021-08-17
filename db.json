@@ -1,0 +1,48 @@
+{
+    "lastUpdate" : "17-08-2021",
+    "days" : {
+        "monday" : [
+            "Control System Engineering",
+            "Elective 1",
+            "Elective 2",
+            "Digital Communication",
+            "Digital Signal Processing"
+        ],
+        "tuesday" : [
+            "Elective 2",
+            "Digital Communication",
+            "Control System Engineering",
+            "Digital Signal Processing",
+            "EM Waves and Wave Guides"
+        ],
+        "wednesday" : [
+            "Elective 1",
+            "EM Waves and Wave Guides",
+            "Control System Engineering",
+            "Soft Skills 2"
+        ],
+        "thursday" : [
+            "EM Waves and Wave Guides",
+            "Elective 1",
+            "Elective 2",
+            "Digital Communication",
+            "Digital Signal Processing"
+        ],
+        "friday" : [
+            "Elective 2",
+            "EM Waves and Wave Guides",
+            "Digital Signal Processing",
+            "Elective 1",
+            "Control System Engineering"
+        ]
+    },
+    "links":{
+        "Elective 1":"",
+        "Elective 2":"",
+        "Control System Engineering":"",
+        "EM Waves and Wave Guides":"",
+        "Digital Signal Processing":"",
+        "Digital Communication":"",
+        "Soft Skills 2":""
+    }
+}
