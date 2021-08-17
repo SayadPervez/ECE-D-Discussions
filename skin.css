@@ -1,10 +1,12 @@
 *{
-    overflow-x: hidden;    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body{
     background-image: url("./subtle-background-black.png");
-    background-attachment: fixed;    padding-bottom: 3rem;
+    background-attachment: fixed;
+    padding-bottom: 3rem;
 }
 
 html{
