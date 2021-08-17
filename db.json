@@ -37,12 +37,12 @@
         ]
     },
     "links":{
-        "Elective 1":"",
-        "Elective 2":"",
-        "Control System Engineering":"",
-        "EM Waves and Wave Guides":"",
-        "Digital Signal Processing":"",
-        "Digital Communication":"",
-        "Soft Skills 2":""
+        "Elective 1":"https://meet.google.com/ffp-qrtj-qaf",
+        "Elective 2":"https://meet.google.com/uuv-nvgc-xpa",
+        "CSE":"https://meet.google.com/sdq-puzf-prs",
+        "EM Waves":"https://meet.google.com/sdq-puzf-prs",
+        "DSP":"https://meet.google.com/sdq-puzf-prs",
+        "DC":"https://meet.google.com/sdq-puzf-prs",
+        "Soft Skills 2":"https://meet.google.com/lookup/cz3735yflv"
     }
 }
