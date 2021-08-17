@@ -18,7 +18,6 @@ function func()
 {
     var temp = new Date();
     document.getElementById("nav-heading").innerText=`ECE D - ${weekdays[temp.getDay()]}`;
-    //console.log((weekdays[temp.getDay()]).toLowerCase());
     readJson((weekdays[temp.getDay()]).toLowerCase());
 }
 
