@@ -86,7 +86,7 @@ function doStuffJson(jOb)
             <span class="card-title yellow-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
                 <p class="right-align" style="font-weight: 500;float:right">${timeList[i]}</p>
             </span>
-            <p style="font-size: large;">${periodList[i][1]}</p>
+            <p class="black-text" style="font-size: large;">${periodList[i][1]}</p>
         </div>
         </div>
         </div>
