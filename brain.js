@@ -33,7 +33,7 @@ function func()
     readJson((weekdays[temp.getDay()]).toLowerCase());
 }
 
-var dblink = "https://rec-ece-d-discussions.glitch.me/db.json"
+var dblink = "https://ece-d.glitch.me/db.json"
 
 function readJson (day) {
     fetch(dblink)
