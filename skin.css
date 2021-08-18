@@ -22,6 +22,10 @@ html{
     border-radius: 9px;
 }
 
+.card > *{
+    cursor: pointer;
+}
+
 
 .nav-wrapper{
     background-image: linear-gradient(45deg,#212121,#313131,#131313,#131313,#313131,#212121);

@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./skin.css">
+</head>
+<body style="background-image: url('./subtle-background.png');">
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper" style="box-shadow: #ffffff 1px 1px 5px 3px;">
+            <div class="container">
+            <a href="#" class="brand-logo white-text" id="nav-heading">Settings</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container" style="padding:2rem;">
+        
+        <form>
+            <h4>Elective 1</h4>
+              <input type="radio" id="MEMS" name="e1" value="MEMS" checked>
+              <label for="MEMS" style="font-weight: 500;color:black;">MEMS</label><br>
+              <input type="radio" id="ITC" name="e1" value="ITC">
+              <label for="ITC" style="font-weight: 500;color:black;" active>Information Theory and Coding</label><br>
+        </form>     
+        <form>
+            <h4>Elective 2</h4>
+              <input type="radio" id="BM" name="e2" value="BM" checked>
+              <label for="BM" style="font-weight: 500;color:black;">Bio Medical Electroics</label><br>
+              <input type="radio" id="SAP" name="e2" value="SAP">
+              <label for="SAP" style="font-weight: 500;color:black;">Speech and Audio Processing</label><br>
+        </form>      
+        <br><br>
+        <button class="waves-effect waves-light btn" onclick="savechanges()">Save Changes</button>
+        <br><br><br>
+        <label>Deleting browser history, cache or cookies will reset the changes to default</label>
+          
+    </div>
+    <script>
+        window.onload = function(){ 
+            localStorage.setItem("Elective 1","MEMS");
+            localStorage.setItem("Elective 2","BM");
+        }
+        function savechanges()
+        {
+            if(document.getElementById("MEMS").checked)
+                localStorage.setItem("Elective 1","MEMS");
+            if(document.getElementById("ITC").checked)
+                localStorage.setItem("Elective 1","ITC");
+            if(document.getElementById("BM").checked)
+                localStorage.setItem("Elective 2","BM");
+            if(document.getElementById("SAP").checked)
+                localStorage.setItem("Elective 2","SAP");
+
+            console.log(localStorage.getItem("Elective 1"));
+            console.log(localStorage.getItem("Elective 2"));
+        }
+    </script>
+</body>
+</html>
