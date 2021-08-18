@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v3';
-const dynamicCacheName = 'site-dynamic-v3';
+const staticCacheName = 'site-static-v4';
+const dynamicCacheName = 'site-dynamic-v4';
 const assets = [
   './index.html',
   './brain.js',
@@ -18,6 +18,7 @@ const assets = [
   './assests/icon152.png',
   './assests/icon144.png',
   './assests/icon128.png',
+  'https://img.icons8.com/material-outlined/16/1a237e/external-link.png',
   'https://use.fontawesome.com/releases/v5.0.13/css/all.css',
   'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css',
   'https://code.jquery.com/jquery-3.3.1.min.js',
