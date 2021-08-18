@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./skin.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body style="background-image: url('./subtle-background.png');">
     <div class="navbar-fixed">
@@ -21,42 +22,61 @@
         
         <form>
             <h4>Elective 1</h4>
-              <input type="radio" id="MEMS" name="e1" value="MEMS" checked>
+              <input type="radio" id="MEMS" name="e1" value="MEMS">
               <label for="MEMS" style="font-weight: 500;color:black;">MEMS</label><br>
               <input type="radio" id="ITC" name="e1" value="ITC">
               <label for="ITC" style="font-weight: 500;color:black;" active>Information Theory and Coding</label><br>
         </form>     
         <form>
             <h4>Elective 2</h4>
-              <input type="radio" id="BM" name="e2" value="BM" checked>
+              <input type="radio" id="BM" name="e2" value="BM">
               <label for="BM" style="font-weight: 500;color:black;">Bio Medical Electroics</label><br>
               <input type="radio" id="SAP" name="e2" value="SAP">
               <label for="SAP" style="font-weight: 500;color:black;">Speech and Audio Processing</label><br>
         </form>      
         <br><br>
-        <button class="waves-effect waves-light btn" onclick="savechanges()">Save Changes</button>
-        <br><br><br>
+        <button class="waves-effect waves-light btn yellow darken-4" onclick="savechanges()">Save Changes</button>
+        <br><br>
+        <button class="waves-effect waves-light btn purple darken-2" onclick="window.location.assign('/')" >Back to App</button>
+        <br><br>
+
         <label>Deleting browser history, cache or cookies will reset the changes to default</label>
           
     </div>
     <script>
         window.onload = function(){ 
-            localStorage.setItem("Elective 1","MEMS");
-            localStorage.setItem("Elective 2","BM");
+            if(localStorage.getItem("Elective 1")==null && localStorage.getItem("Elective 2")==null)
+            {
+                localStorage.setItem("Elective 1","MEMS");
+                localStorage.setItem("Elective 2","BM");
+                document.getElementById("MEMS").checked=true;
+                document.getElementById("BM").checked=true;
+            }
+            else{
+                if(localStorage.getItem("Elective 1")=="MEMS")
+                    document.getElementById("MEMS").checked=true;
+                else
+                    document.getElementById("ITC").checked=true;
+                    if(localStorage.getItem("Elective 2")=="BM")
+                    document.getElementById("BM").checked=true;
+                else
+                    document.getElementById("SAP").checked=true;
+            }
         }
         function savechanges()
         {
             if(document.getElementById("MEMS").checked)
                 localStorage.setItem("Elective 1","MEMS");
-            if(document.getElementById("ITC").checked)
+            else
                 localStorage.setItem("Elective 1","ITC");
             if(document.getElementById("BM").checked)
                 localStorage.setItem("Elective 2","BM");
-            if(document.getElementById("SAP").checked)
+            else
                 localStorage.setItem("Elective 2","SAP");
 
             console.log(localStorage.getItem("Elective 1"));
             console.log(localStorage.getItem("Elective 2"));
+            alert("You chose "+localStorage.getItem("Elective 1")+" and "+localStorage.getItem("Elective 2")+"\nPreferences Saved");
         }
     </script>
 </body>
