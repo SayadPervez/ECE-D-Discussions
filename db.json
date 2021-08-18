@@ -37,8 +37,10 @@
         ]
     },
     "links":{
-        "Elective 1":"https://meet.google.com/ffp-qrtj-qaf",
-        "Elective 2":"https://meet.google.com/uuv-nvgc-xpa",
+        "MEMS":"https://meet.google.com/ffp-qrtj-qaf",
+        "SAP":"https://meet.google.com/uuv-nvgc-xpa",
+        "BM":"https://meet.google.com/sdq-puzf-prs",
+        "ITC":"http://meet.google.com/uuv-nvgc-xpa",
         "CSE":"https://meet.google.com/sdq-puzf-prs",
         "EM Waves":"https://meet.google.com/sdq-puzf-prs",
         "DSP":"https://meet.google.com/sdq-puzf-prs",
