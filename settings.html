@@ -21,14 +21,14 @@
         
         <form>
             <h4>Elective 1</h4>
-              <input type="radio" id="MEMS" name="e1" value="MEMS" checked>
+              <input type="radio" id="MEMS" name="e1" value="MEMS">
               <label for="MEMS" style="font-weight: 500;color:black;">MEMS</label><br>
               <input type="radio" id="ITC" name="e1" value="ITC">
               <label for="ITC" style="font-weight: 500;color:black;" active>Information Theory and Coding</label><br>
         </form>     
         <form>
             <h4>Elective 2</h4>
-              <input type="radio" id="BM" name="e2" value="BM" checked>
+              <input type="radio" id="BM" name="e2" value="BM">
               <label for="BM" style="font-weight: 500;color:black;">Bio Medical Electroics</label><br>
               <input type="radio" id="SAP" name="e2" value="SAP">
               <label for="SAP" style="font-weight: 500;color:black;">Speech and Audio Processing</label><br>
@@ -48,11 +48,11 @@
         {
             if(document.getElementById("MEMS").checked)
                 localStorage.setItem("Elective 1","MEMS");
-            if(document.getElementById("ITC").checked)
+            else
                 localStorage.setItem("Elective 1","ITC");
             if(document.getElementById("BM").checked)
                 localStorage.setItem("Elective 2","BM");
-            if(document.getElementById("SAP").checked)
+            else
                 localStorage.setItem("Elective 2","SAP");
 
             console.log(localStorage.getItem("Elective 1"));
