@@ -37,7 +37,7 @@
         <br><br>
         <button class="waves-effect waves-light btn yellow darken-4" onclick="savechanges()">Save Changes</button>
         <br><br>
-        <button class="waves-effect waves-light btn purple darken-4" onclick="window.location.assign('/')" >Back to App</button>
+        <button class="waves-effect waves-light btn purple darken-2" onclick="window.location.assign('/')" >Back to App</button>
         <br><br>
 
         <label>Deleting browser history, cache or cookies will reset the changes to default</label>
@@ -45,8 +45,23 @@
     </div>
     <script>
         window.onload = function(){ 
-            localStorage.setItem("Elective 1","MEMS");
-            localStorage.setItem("Elective 2","BM");
+            if(localStorage.getItem("Elective 1")==null && localStorage.getItem("Elective 2")==null)
+            {
+                localStorage.setItem("Elective 1","MEMS");
+                localStorage.setItem("Elective 2","BM");
+                document.getElementById("MEMS").checked=true;
+                document.getElementById("BM").checked=true;
+            }
+            else{
+                if(localStorage.getItem("Elective 1")=="MEMS")
+                    document.getElementById("MEMS").checked=true;
+                else
+                    document.getElementById("ITC").checked=true;
+                    if(localStorage.getItem("Elective 2")=="BM")
+                    document.getElementById("BM").checked=true;
+                else
+                    document.getElementById("SAP").checked=true;
+            }
         }
         function savechanges()
         {
@@ -61,6 +76,7 @@
 
             console.log(localStorage.getItem("Elective 1"));
             console.log(localStorage.getItem("Elective 2"));
+            alert("You chose "+localStorage.getItem("Elective 1")+" and "+localStorage.getItem("Elective 2")+"\nPreferences Saved");
         }
     </script>
 </body>
