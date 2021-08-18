@@ -73,7 +73,7 @@ function doStuffJson(jOb)
     var temp = new Date();
     var today=(weekdays[temp.getDay()]).toLowerCase()
     var periodList=jOb.days[today]
-    //var periodList=jOb.days['monday']
+    //var periodList=jOb.days['monday']//
     console.log(jOb);
     console.log(today);
     console.log(jOb.days[today]);
