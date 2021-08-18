@@ -5,7 +5,7 @@
     "description":"A simple PWA Schedule app by Sayad Pervez",
     "display": "standalone",
     "background_color": "#121212",
-    "theme_color": "#5b269b",
+    "theme_color": "#1a237e",
     "orientation": "portrait",
     "icons": [
       {
