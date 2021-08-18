@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v4';
-const dynamicCacheName = 'site-dynamic-v4';
+const staticCacheName = 'site-static-v5';
+const dynamicCacheName = 'site-dynamic-v5';
 const assets = [
   './index.html',
   './brain.js',
@@ -10,6 +10,7 @@ const assets = [
   './subtle-background.png',
   './settings icon.png',
   './db.json',
+  './timetable.jpeg',
   './assests/icon96.png',
   './assests/icon72.png',
   './assests/icon512.png',
