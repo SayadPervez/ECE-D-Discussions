@@ -1,8 +1,9 @@
-const staticCacheName = 'site-static-v5';
-const dynamicCacheName = 'site-dynamic-v5';
+const staticCacheName = 'site-static-v6';
+const dynamicCacheName = 'site-dynamic-v6';
 const assets = [
   './index.html',
   './brain.js',
+  './all.html',
   './manifest.json',
   './skin.css',
   './swhandle.js',
