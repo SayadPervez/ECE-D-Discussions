@@ -22,6 +22,11 @@ html{
     border-radius: 9px;
 }
 
+.card-red{
+    background-image: linear-gradient(45deg,#c62828,#d32f2f,#131313,#131313,#d32f2f,#c62828);
+    border-radius: 9px;
+}
+
 .card > *{
     cursor: pointer;
 }
