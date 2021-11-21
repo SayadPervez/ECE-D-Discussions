@@ -10,36 +10,74 @@
             ["Lunch","50 mins"],
             ["EM Waves","EM Waves and Wave Guides"],
             ["EM Waves","EM Waves and Wave Guides"],
-            ["Break","20 mins"],
+            ["Break","15 mins"],
             ["DSP","Digital Signal Processing"],
             ["DSP","Digital Signal Processing"]
         ],
         "tuesday" : [
+            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
+            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
+            ["Break","20 mins"],
+            ["DC","Digital Communication"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["Lunch","50 mins"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["CSE","Control System Engineering"],
+            ["Break","15 mins"],
             ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["DSP","Digital Signal Processing"]
+        ],
+        "wednesday" : [
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["Break","20 mins"],
+            ["Soft Skills 2","Soft Skills 2"],
+            ["Soft Skills 2","Soft Skills 2"],
+            ["Lunch","50 mins"],
             ["DC","Digital Communication"],
             ["CSE","Control System Engineering"],
+            ["Break","15 mins"],
+            ["DC","Digital Communication"],
+            ["CSE","Control System Engineering"]
+        ],
+        "thursday" : [
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["Break","20 mins"],
+            ["Soft Skills 2","Soft Skills 2"],
+            ["Soft Skills 2","Soft Skills 2"],
+            ["Lunch","50 mins"],
+            ["DC","Digital Communication"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["Break","15 mins"],
             ["DSP","Digital Signal Processing"],
             ["EM Waves","EM Waves and Wave Guides"]
         ],
-        "wednesday" : [
-            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
-            ["EM Waves","EM Waves and Wave Guides"],
-            ["CSE","Control System Engineering"],
-            ["Soft Skills 2","Soft Skills 2"]
-        ],
-        "thursday" : [
-            ["EM Waves","EM Waves and Wave Guides"],
-            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
-            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
-            ["DC","Digital Communication"],
-            ["DSP","Digital Signal Processing"]
-        ],
         "friday" : [
-            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
             ["EM Waves","EM Waves and Wave Guides"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["Break","20 mins"],
             ["DSP","Digital Signal Processing"],
+            ["DSP","Digital Signal Processing"],
+            ["Lunch","50 mins"],
             ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
-            ["CSE","Control System Engineering"]
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["Break","15 mins"],
+            ["DSP","Digital Signal Processing"],
+            ["EM Waves","EM Waves and Wave Guides"]
+        ],
+        "saturday" : [
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["Break","20 mins"],
+            ["Soft Skills 2","Soft Skills 2"],
+            ["Soft Skills 2","Soft Skills 2"],
+            ["Lunch","50 mins"],
+            ["DC","Digital Communication"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["Break","15 mins"],
+            ["DSP","Digital Signal Processing"],
+            ["EM Waves","EM Waves and Wave Guides"]
         ]
     },
     "links":{

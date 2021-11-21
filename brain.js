@@ -11,7 +11,7 @@ var weekdays = {
     3 : "Wednesday",
     4 : "Thursday",
     5 : "Friday",
-    6 : "Monday"
+    6 : "Saturday"
 }
 
 var wdays = {
