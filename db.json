@@ -2,10 +2,16 @@
     "lastUpdate" : "17-08-2021",
     "days" : {
         "monday" : [
-            ["CSE","Control System Engineering"],
             ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
-            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
-            ["DC","Digital Communication"],
+            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
+            ["Break","20 mins"],
+            ["CSE","Control System Engineering"],
+            ["CSE","Control System Engineering"],
+            ["Lunch","50 mins"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["EM Waves","EM Waves and Wave Guides"],
+            ["Break","20 mins"],
+            ["DSP","Digital Signal Processing"],
             ["DSP","Digital Signal Processing"]
         ],
         "tuesday" : [

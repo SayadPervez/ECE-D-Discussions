@@ -4,7 +4,7 @@ window.onload = function(){
 
 
 
-weekdays = {
+var weekdays = {
     0 : "Monday",
     1 : "Monday",
     2 : "Tuesday",
@@ -14,7 +14,7 @@ weekdays = {
     6 : "Monday"
 }
 
-wdays = {
+var wdays = {
     0 : "Sunday",
     1 : "Monday",
     2 : "Tuesday",
@@ -24,7 +24,7 @@ wdays = {
     6 : "Saturday"  
 }
 
-timeList=['9:00 AM','10:15 AM',"11:30 AM","1:30 PM","2:45 PM"]
+var timeList=['8 - 8:50 AM','8:50 - 9:40 AM','9:40 - 10 AM',"10 - 10:50 AM","10:50 - 11:40 AM","11:40 - 12:30 PM","12:30 - 1:20 PM","1:20 - 2:10 PM","2:10 - 2:25 PM","2:25 - 3:15 PM","3:15 - 4 PM"]
 
 function func()
 {
@@ -77,7 +77,7 @@ function doStuffJson(jOb)
     console.log(jOb);
     console.log(today);
     console.log(jOb.days[today]);
-    for(i=0; i<periodList.length;i++)
+    for(var i=0; i<periodList.length;i++)
     {
         htmlString+=`
         <div class="col s10 m10 l8 offset-s1 offset-m1 offset-l2">
