@@ -63,21 +63,21 @@
             ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
             ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
             ["Break","15 mins"],
-            ["DSP","Digital Signal Processing"],
-            ["EM Waves","EM Waves and Wave Guides"]
+            ["DC","Digital Communication"],
+            ["DC","Digital Communication"]
         ],
         "saturday" : [
-            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
-            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["DSP","Digital Signal Processing"],
+            ["CSE","Control System Engineering"],
             ["Break","20 mins"],
-            ["Soft Skills 2","Soft Skills 2"],
-            ["Soft Skills 2","Soft Skills 2"],
-            ["Lunch","50 mins"],
+            ["CSE","Control System Engineering"],
             ["DC","Digital Communication"],
-            ["EM Waves","EM Waves and Wave Guides"],
+            ["Lunch","50 mins"],
+            ["Elective 1","Information Theory & Coding / <br>Introduction to MEMS"],
+            ["DC","Digital Communication"],
             ["Break","15 mins"],
             ["DSP","Digital Signal Processing"],
-            ["EM Waves","EM Waves and Wave Guides"]
+            ["DSP","Digital Signal Processing"]
         ]
     },
     "links":{
