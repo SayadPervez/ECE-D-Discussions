@@ -23,7 +23,7 @@ html{
 }
 
 .card-red{
-    background-image: linear-gradient(45deg,#c62828,#d32f2f,#131313,#131313,#d32f2f,#c62828);
+    background-image: linear-gradient(45deg,#f9a825,#fbc02d,#f57f17,#f57f17,#fbc02d,#f9a825);
     border-radius: 9px;
 }
 

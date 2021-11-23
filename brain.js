@@ -15,7 +15,7 @@ var weekdays = {
 }
 
 var wdays = {
-    0 : "Sunday",
+    0 : "Monday",
     1 : "Monday",
     2 : "Tuesday",
     3 : "Wednesday",
@@ -85,10 +85,9 @@ function doStuffJson(jOb)
         <div class="col s10 m10 l8 offset-s1 offset-m1 offset-l2">
         <div class="card card-red z-depth-4">
         <div class="card-content white-text">
-            <span class="card-title red-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
-                <p class="right-align" style="font-weight: 500;float:right">${timeList[i]}</p>
+            <span class="card-title black-text" style="font-weight: 500;">${periodList[i][0]}
             </span>
-            <p style="font-size: large;">${periodList[i][1]}</p>
+            <p class="black-text" style="font-size: large;">${periodList[i][1]}</p>
         </div>
         </div>
         </div>
@@ -101,7 +100,7 @@ function doStuffJson(jOb)
         <div class="card z-depth-4">
         <div class="card-content white-text">
             <span class="card-title yellow-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
-                <p class="right-align" style="font-weight: 500;float:right">${timeList[i]}</p>
+                <p style="font-weight: 500;">${timeList[i]}</p>
             </span>
             <p style="font-size: large;">${periodList[i][1]}</p>
         </div>
