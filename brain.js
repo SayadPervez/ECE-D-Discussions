@@ -72,6 +72,15 @@ function doStuffJson(jOb)
     var htmlString = ``;
     var temp = new Date();
     var today=(weekdays[temp.getDay()]).toLowerCase()
+    if(temp.getHours()>16)
+      {
+        var today=(weekdays[(temp.getDay()+1)]%6).toLowerCase();
+        console.log("Chitty Chitty bang bang");
+        console.log(today);
+      }
+    else{
+      console.log("me")
+    }
     var periodList=jOb.days[today]
     //var periodList=jOb.days['monday']//
     console.log(jOb);
