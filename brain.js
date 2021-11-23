@@ -74,9 +74,7 @@ function doStuffJson(jOb)
     var today=(weekdays[temp.getDay()]).toLowerCase()
     if(temp.getHours()>16)
       {
-        var today=(weekdays[(temp.getDay()+1)]%6).toLowerCase();
-        console.log("Chitty Chitty bang bang");
-        console.log(today);
+        ;
       }
     else{
       console.log("me")
