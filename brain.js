@@ -30,7 +30,8 @@ function func()
 {
     var temp = new Date();
     if(temp.getHours()>=16)
-      document.getElementById("nav-heading").innerText=`ECE D - ${wdays[(temp.getDay()+1)]}`;
+      document.getElementById("nav-heading").innerText=`ECE D - ${wdays[(temp.getDay()+1)%6]}`;
+    else
     document.getElementById("nav-heading").innerText=`ECE D - ${wdays[temp.getDay()]}`;
     readJson((weekdays[temp.getDay()]).toLowerCase());
 }

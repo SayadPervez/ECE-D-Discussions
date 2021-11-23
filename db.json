@@ -21,8 +21,8 @@
             ["DC","Digital Communication"],
             ["EM Waves","EM Waves and Wave Guides"],
             ["Lunch","50 mins"],
-            ["EM Waves","EM Waves and Wave Guides"],
             ["CSE","Control System Engineering"],
+            ["EM Waves","EM Waves and Wave Guides"],
             ["Break","15 mins"],
             ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
             ["DSP","Digital Signal Processing"]
@@ -41,8 +41,8 @@
             ["CSE","Control System Engineering"]
         ],
         "thursday" : [
-            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
-            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["DSP","Digital Signal Processing"],
+            ["DSP","Digital Signal Processing"],
             ["Break","20 mins"],
             ["Soft Skills 2","Soft Skills 2"],
             ["Soft Skills 2","Soft Skills 2"],
@@ -50,8 +50,8 @@
             ["DC","Digital Communication"],
             ["EM Waves","EM Waves and Wave Guides"],
             ["Break","15 mins"],
-            ["DSP","Digital Signal Processing"],
-            ["EM Waves","EM Waves and Wave Guides"]
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"],
+            ["Elective 2","Speech and Audio Processing / <br>Bio Medical Electronics"]
         ],
         "friday" : [
             ["EM Waves","EM Waves and Wave Guides"],
@@ -77,7 +77,7 @@
             ["DC","Digital Communication"],
             ["Break","15 mins"],
             ["DSP","Digital Signal Processing"],
-            ["DSP","Digital Signal Processing"]
+            ["EM Waves","EM Waves and Wave Guides"]
         ]
     },
     "links":{
