@@ -29,6 +29,8 @@ var timeList=['8 - 8:50 AM','8:50 - 9:40 AM','9:40 - 10 AM',"10 - 10:50 AM","10:
 function func()
 {
     var temp = new Date();
+    if(temp.getHours()>=16)
+      document.getElementById("nav-heading").innerText=`ECE D - ${wdays[(temp.getDay()+1)]}`;
     document.getElementById("nav-heading").innerText=`ECE D - ${wdays[temp.getDay()]}`;
     readJson((weekdays[temp.getDay()]).toLowerCase());
 }
@@ -71,8 +73,11 @@ function doStuffJson(jOb)
 {
     var htmlString = ``;
     var temp = new Date();
-    var today=(weekdays[temp.getDay()]).toLowerCase()
-    var periodList=jOb.days[today]
+    if(temp.getHours()>=16)
+    {var today=(weekdays[(temp.getDay()+1)%6]).toLowerCase();console.log("ifififi")}
+    else
+    {var today=(weekdays[temp.getDay()]).toLowerCase();console.log("elseelseelse")}
+    var periodList=jOb.days[today];
     //var periodList=jOb.days['monday']//
     console.log(jOb);
     console.log(today);
