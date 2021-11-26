@@ -30,7 +30,7 @@ function func()
 {
     var temp = new Date();
     if(temp.getHours()>=16)
-      document.getElementById("nav-heading").innerText=`ECE D - ${wdays[(temp.getDay()+1)%6]}`;
+      document.getElementById("nav-heading").innerText=`ECE D - ${wdays[(temp.getDay()+1)%7]}`;
     else
     document.getElementById("nav-heading").innerText=`ECE D - ${wdays[temp.getDay()]}`;
     readJson((weekdays[temp.getDay()]).toLowerCase());
@@ -75,7 +75,7 @@ function doStuffJson(jOb)
     var htmlString = ``;
     var temp = new Date();
     if(temp.getHours()>=16)
-    {var today=(weekdays[(temp.getDay()+1)%6]).toLowerCase();console.log("ifififi")}
+    {var today=(weekdays[(temp.getDay()+1)%7]).toLowerCase();console.log("ifififi")}
     else
     {var today=(weekdays[temp.getDay()]).toLowerCase();console.log("elseelseelse")}
     var periodList=jOb.days[today];
