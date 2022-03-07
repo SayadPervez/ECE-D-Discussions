@@ -22,8 +22,13 @@ html{
     border-radius: 9px;
 }
 
-.card-red{
+.card-yellow{
     background-image: linear-gradient(45deg,#f9a825,#fbc02d,#f57f17,#f57f17,#fbc02d,#f9a825);
+    border-radius: 9px;
+}
+
+.card-red{
+    background-image: linear-gradient(45deg,#f74747,#fc2a2a,#f81212,#f81212,#fc2a2a,#f74747);
     border-radius: 9px;
 }
 

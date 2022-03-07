@@ -5,8 +5,8 @@ window.onload = function(){
 
 
 var weekdays = {
-    0 : "Monday",
-    1 : "Monday",
+    0 : "Tuesday",
+    1 : "Tuesday",
     2 : "Tuesday",
     3 : "Wednesday",
     4 : "Thursday",
@@ -15,16 +15,14 @@ var weekdays = {
 }
 
 var wdays = {
-    0 : "Monday",
-    1 : "Monday",
+    0 : "Tuesday",
+    1 : "Tuesday",
     2 : "Tuesday",
     3 : "Wednesday",
     4 : "Thursday",
     5 : "Friday",
     6 : "Saturday"  
 }
-
-var timeList=['8 - 8:50 AM','8:50 - 9:40 AM','9:40 - 10 AM',"10 - 10:50 AM","10:50 - 11:40 AM","11:40 - 12:30 PM","12:30 - 1:20 PM","1:20 - 2:10 PM","2:10 - 2:25 PM","2:25 - 3:15 PM","3:15 - 4 PM"]
 
 function func()
 {
@@ -36,7 +34,8 @@ function func()
     readJson((weekdays[temp.getDay()]).toLowerCase());
 }
 
-var dblink = "https://ece-d.glitch.me/db.json"
+//var dblink = "https://ece-d.glitch.me/db.json"
+var dblink = "./db.json"
 
 function readJson (day) {
     fetch(dblink)
@@ -54,32 +53,16 @@ function readJson (day) {
     })
  }
 
- function red(x)
- {
-     console.log("x:",x);
-     if(x=="Elective 2" || x=="Elective 1")
-     {
-        if(localStorage.getItem(x)==null)
-        {
-            window.location.replace("/settings.html")
-        }
-        return(localStorage.getItem(x));
-     }
-     else{
-         return(x);
-     }
- }
-
 function doStuffJson(jOb)
 {
     var htmlString = ``;
     var temp = new Date();
-    if(temp.getHours()>=16)
+    if(temp.getHours()>=15)
     {var today=(weekdays[(temp.getDay()+1)%7]).toLowerCase();console.log("ifififi")}
     else
     {var today=(weekdays[temp.getDay()]).toLowerCase();console.log("elseelseelse")}
     var periodList=jOb.days[today];
-    //var periodList=jOb.days['monday']//
+    //var periodList=jOb.days['saturday'];
     console.log(jOb);
     console.log(today);
     console.log(jOb.days[today]);
@@ -89,16 +72,32 @@ function doStuffJson(jOb)
       {
         htmlString+=`
         <div class="col s10 m10 l8 offset-s1 offset-m1 offset-l2">
-        <div class="card card-red z-depth-4">
+        <div class="card card-yellow z-depth-4">
         <div class="card-content white-text">
-            <span class="card-title black-text" style="font-weight: 500;">${periodList[i][0]}
+            <span class="card-title black-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
+                <p style="font-weight: 500;">${periodList[i][2]}</p>
             </span>
-            <p class="black-text" style="font-size: large;">${periodList[i][1]}</p>
+            <p class="white-text" style="font-size: large;font-weight:500;">${periodList[i][1]}</p>
         </div>
         </div>
         </div>
         `
       }
+      else if(periodList[i][0]=="Lab")
+        {
+                  htmlString+=`
+        <div class="col s10 m10 l8 offset-s1 offset-m1 offset-l2">
+        <div class="card card-red z-depth-4">
+        <div class="card-content white-text">
+            <span class="card-title black-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
+                <p style="font-weight: 500;">${periodList[i][2]}</p>
+            </span>
+            <p style="font-size: large;">${periodList[i][1]}</p>
+        </div>
+        </div>
+        </div>
+        `
+        }
       else
         {
                   htmlString+=`
@@ -106,7 +105,7 @@ function doStuffJson(jOb)
         <div class="card z-depth-4">
         <div class="card-content white-text">
             <span class="card-title yellow-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
-                <p style="font-weight: 500;">${timeList[i]}</p>
+                <p style="font-weight: 500;">${periodList[i][2]}</p>
             </span>
             <p style="font-size: large;">${periodList[i][1]}</p>
         </div>

@@ -25,24 +25,10 @@
     </div>
     <div class="container" style="padding:2rem;">
         
-        <form>
-            <h4>Elective 1</h4>
-              <input type="radio" id="MEMS" name="e1" value="MEMS">
-              <label for="MEMS" style="font-weight: 500;color:black;">MEMS</label><br>
-              <input type="radio" id="ITC" name="e1" value="ITC">
-              <label for="ITC" style="font-weight: 500;color:black;" active>Information Theory and Coding</label><br>
-        </form>     
-        <form>
-            <h4>Elective 2</h4>
-              <input type="radio" id="BM" name="e2" value="BM">
-              <label for="BM" style="font-weight: 500;color:black;">Bio Medical Electroics</label><br>
-              <input type="radio" id="SAP" name="e2" value="SAP">
-              <label for="SAP" style="font-weight: 500;color:black;">Speech and Audio Processing</label><br>
-        </form>      
         <br><br>
-        <button class="waves-effect waves-light btn yellow darken-4" onclick="savechanges()">Save Changes</button>
+        <button class="waves-effect waves-light btn yellow darken-4" onclick="window.open('https://meet.google.com/ugh-wnek-tvu','_blank');">Join CTS GMeet</button>
         <br><br>
-        <button class="waves-effect waves-light btn teal darken-2" onclick="window.open('https://cdn.glitch.me/2353b51e-12e5-47d2-9d85-606e51f166a8%2Ftimetable.jpg?v=1637686277009','_blank')"" >View TimeTable</button>
+        <button class="waves-effect waves-light btn teal darken-2" onclick="window.open('https://cdn.glitch.me/2353b51e-12e5-47d2-9d85-606e51f166a8%2Ftimetable.jpg?v=1637686277009','_blank')" >View TimeTable</button>
         <br><br>
         <button class="waves-effect waves-light btn indigo darken-4" onclick="window.location.assign('/')" >Back to App</button>
         <br><br>
@@ -62,42 +48,6 @@
             <img src="https://img.icons8.com/material-outlined/16/1a237e/external-link.png"/></p></div>
           
     </div>
-    <script>
-        window.onload = function(){ 
-            if(localStorage.getItem("Elective 1")==null && localStorage.getItem("Elective 2")==null)
-            {
-                localStorage.setItem("Elective 1","MEMS");
-                localStorage.setItem("Elective 2","BM");
-                document.getElementById("MEMS").checked=true;
-                document.getElementById("BM").checked=true;
-            }
-            else{
-                if(localStorage.getItem("Elective 1")=="MEMS")
-                    document.getElementById("MEMS").checked=true;
-                else
-                    document.getElementById("ITC").checked=true;
-                    if(localStorage.getItem("Elective 2")=="BM")
-                    document.getElementById("BM").checked=true;
-                else
-                    document.getElementById("SAP").checked=true;
-            }
-        }
-        function savechanges()
-        {
-            if(document.getElementById("MEMS").checked)
-                localStorage.setItem("Elective 1","MEMS");
-            else
-                localStorage.setItem("Elective 1","ITC");
-            if(document.getElementById("BM").checked)
-                localStorage.setItem("Elective 2","BM");
-            else
-                localStorage.setItem("Elective 2","SAP");
-
-            console.log(localStorage.getItem("Elective 1"));
-            console.log(localStorage.getItem("Elective 2"));
-            alert("You chose "+localStorage.getItem("Elective 1")+" and "+localStorage.getItem("Elective 2")+"\nPreferences Saved");
-        }
-    </script>
     <script src="./swhandle.js"></script>
 </body>
 </html>
