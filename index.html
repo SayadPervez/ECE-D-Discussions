@@ -19,7 +19,7 @@
         
         <nav class="nav-wrapper" style="box-shadow: #ffffff 1px 1px 5px 3px;">
             <div class="container">
-            <a href="#" class="brand-logo white-text" id="nav-heading"></a>
+            <a href="#modal1" class="brand-logo white-text modal-trigger" id="nav-heading"></a>
             </div>
         </nav>
     </div>
@@ -30,6 +30,45 @@
         
     </div>
 
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Select Day</h4>
+          <br>
+          <form action="#">
+            <input id="Tuesday" name="group1" type="radio" />   
+            <label for="Tuesday" style="font-size: 1.5rem;color:black;">Tuesday</label>
+
+            <br><br>
+
+            <input id="Wednesday" name="group1" type="radio" />  
+            <label for="Wednesday" style="font-size: 1.5rem;color:black;">Wednesday</label>
+
+            <br><br>
+
+            <input id="Thursday" name="group1" type="radio" />   
+            <label for="Thursday" style="font-size: 1.5rem;color:black;">Thursday</label>
+
+            <br><br>
+
+            <input id="Friday" name="group1" type="radio" />  
+            <label for="Friday" style="font-size: 1.5rem;color:black;">Friday</label>
+            <br><br>
+
+            <input id="Saturday" name="group1" type="radio" />  
+            <label for="Saturday" style="font-size: 1.5rem;color:black;">Saturday</label>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat teal black-text"><strong>View Schedule</strong></a>
+        </div>
+      </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+</script>
 <script src="./brain.js"></script>
 <script src="./swhandle.js"></script>
 </body>
