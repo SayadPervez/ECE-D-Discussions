@@ -48,9 +48,10 @@ function select_day()
     else if(dom("Saturday").checked)
         today = "Saturday";
 
-    print("Selected day is is ",today);
+    console.log("Selected day is ",today);
 
-    
+    document.getElementById("nav-heading").innerText=`ECE D - ${today}`;
+    readJson_forday(today.toLowerCase());
 }
 
 function func()
@@ -82,6 +83,22 @@ function readJson (day) {
     })
  }
 
+ function readJson_forday (day) {
+    fetch(dblink)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return(response.json());
+    })
+    .then(json => {
+        doStuffJson_forday(json,day);
+    })
+    .catch(function () {
+        this.dataError = true;
+    })
+ }
+
 function doStuffJson(jOb)
 {
     var htmlString = ``;
@@ -90,6 +107,66 @@ function doStuffJson(jOb)
     {var today=(weekdays[(temp.getDay()+1)%7]).toLowerCase();console.log("ifififi")}
     else
     {var today=(weekdays[temp.getDay()]).toLowerCase();console.log("elseelseelse")}
+    var periodList=jOb.days[today];
+    //var periodList=jOb.days['saturday'];
+    console.log(jOb);
+    console.log(today);
+    console.log(jOb.days[today]);
+    for(var i=0; i<periodList.length;i++)
+    {
+      if(periodList[i][0]=="Break" || periodList[i][0]=="Lunch")
+      {
+        htmlString+=`
+        <div class="col s10 m10 l8 offset-s1 offset-m1 offset-l2">
+        <div class="card card-yellow z-depth-4">
+        <div class="card-content white-text">
+            <span class="card-title black-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
+                <p style="font-weight: 500;">${periodList[i][2]}</p>
+            </span>
+            <p class="white-text" style="font-size: large;font-weight:500;">${periodList[i][1]}</p>
+        </div>
+        </div>
+        </div>
+        `
+      }
+      else if(periodList[i][0]=="Lab")
+        {
+                  htmlString+=`
+        <div class="col s10 m10 l8 offset-s1 offset-m1 offset-l2">
+        <div class="card card-red z-depth-4">
+        <div class="card-content white-text">
+            <span class="card-title black-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
+                <p style="font-weight: 500;">${periodList[i][2]}</p>
+            </span>
+            <p style="font-size: large;">${periodList[i][1]}</p>
+        </div>
+        </div>
+        </div>
+        `
+        }
+      else
+        {
+                  htmlString+=`
+        <div class="col s10 m10 l8 offset-s1 offset-m1 offset-l2">
+        <div class="card z-depth-4">
+        <div class="card-content white-text">
+            <span class="card-title yellow-text text-darken-4" style="font-weight: 500;">${periodList[i][0]}
+                <p style="font-weight: 500;">${periodList[i][2]}</p>
+            </span>
+            <p style="font-size: large;">${periodList[i][1]}</p>
+        </div>
+        </div>
+        </div>
+        `
+        }
+    }
+    document.getElementById("fill-here").innerHTML=htmlString;
+}
+
+function doStuffJson_forday(jOb,today)
+{
+    var htmlString = ``;
+
     var periodList=jOb.days[today];
     //var periodList=jOb.days['saturday'];
     console.log(jOb);
