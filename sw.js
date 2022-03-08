@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v20.04';
-const dynamicCacheName = 'site-dynamic-v20.04';
+const staticCacheName = 'site-static-v21';
+const dynamicCacheName = 'site-dynamic-v21';
 const assets = [
   './index.html',
   './brain.js',
