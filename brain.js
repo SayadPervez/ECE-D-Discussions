@@ -24,6 +24,35 @@ var wdays = {
     6 : "Saturday"  
 }
 
+function dom(id_)
+{
+    return document.getElementById(id_);
+}
+
+function select_day()
+{
+    var temp = new Date();
+    if(temp.getHours()>=15)
+    {var today=(weekdays[(temp.getDay()+1)%7]).toLowerCase();console.log("ifififi")}
+    else
+    {var today=(weekdays[temp.getDay()]).toLowerCase();console.log("elseelseelse")}
+    
+    if(dom("Tuesday").checked)
+        today = "Tuesday";
+    else if(dom("Wednesday").checked)
+        today = "Wednesday";
+    else if(dom("Thursday").checked)
+        today = "Thursday";
+    else if(dom("Friday").checked)
+        today = "Friday";
+    else if(dom("Saturday").checked)
+        today = "Saturday";
+
+    print("Selected day is is ",today);
+
+    
+}
+
 function func()
 {
     var temp = new Date();
