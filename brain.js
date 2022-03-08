@@ -27,7 +27,7 @@ var wdays = {
 function func()
 {
     var temp = new Date();
-    if(temp.getHours()>=16)
+    if(temp.getHours()>=15)
       document.getElementById("nav-heading").innerText=`ECE D - ${wdays[(temp.getDay()+1)%7]}`;
     else
     document.getElementById("nav-heading").innerText=`ECE D - ${wdays[temp.getDay()]}`;
